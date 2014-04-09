@@ -1,0 +1,543 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/******************************************
+
+ Change values and compile your .less file
+ This will generate your final .css file
+
+******************************************/
+/******************************************
+
+  You dont need to edit the lines below
+
+******************************************/
+/**** GRID ****/
+/* Very very simple, semantic and human friendly columns */
+/* Column size */
+#main-content {
+  width: auto;
+}
+#column-one {
+  width: 20%;
+}
+#column-two {
+  width: 20%;
+}
+/* old fashion table layout */
+#main {
+  display: table;
+  width: 100%;
+}
+#main-content,
+#column-one,
+#column-two {
+  display: table-cell;
+  vertical-align: top;
+}
+/* margin collumns */
+#main-content {
+  padding: 2%;
+}
+#column-one {
+  padding: 2%;
+}
+#column-two {
+  padding: 2%;
+}
+#portal-column-content {
+  width: 100%;
+  margin-left: -100%;
+}
+/**** Basic Styles ****/
+.gradient {
+  background: #69b9ed;
+  background: -webkit-linear-gradient(#4a7cbc, #d7e2e9);
+  /* For Safari */
+
+  background: -o-linear-gradient(#4a7cbc, #d7e2e9);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#4a7cbc, #d7e2e9);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#4a7cbc, #d7e2e9);
+  /* Standard syntax (must be last) */
+
+}
+.gradient2 {
+  background: #79C71E;
+  background: -webkit-linear-gradient(#79c71e, #4e9f2f);
+  /* For Safari */
+
+  background: -o-linear-gradient(#79c71e, #4e9f2f);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#79c71e, #4e9f2f);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#79c71e, #4e9f2f);
+  /* Standard syntax (must be last) */
+
+}
+.gradient3 {
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(#ffffff, #b1d39f);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #b1d39f);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #b1d39f);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #b1d39f);
+  /* Standard syntax (must be last) */
+
+}
+.wrapper-size {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+.shadow {
+  box-shadow: 0 2px 3px #ccc;
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px #000000;
+  -webkit-text-stroke: 1px #cccccc;
+}
+/********** Basic styles **********/
+body {
+  background: #ffffff url(img/background.jpg) no-repeat top center fixed;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+a:link,
+a:visited,
+#content a:link,
+dl.portlet a:link {
+  color: #4a7234;
+  border-bottom: none;
+}
+.state-published {
+  color: #4a7234 !important;
+}
+a:hover {
+  color: #1c2c14;
+}
+#content a:hover,
+dl.portlet a:hover {
+  color: #1c2c14 !important;
+}
+.clear {
+  clear: both;
+}
+/********** Main container **********/
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 23px;
+  padding-top: 10px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(#ffffff, #b1d39f);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #b1d39f);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #b1d39f);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #b1d39f);
+  /* Standard syntax (must be last) */
+
+}
+#main {
+  background: transparent;
+}
+#user {
+  float: right;
+}
+/********** Header **********/
+#portal-personaltools {
+  position: absolute;
+}
+/* area do topo */
+header {
+  color: #cccccc;
+  background: #fff;
+  border: 2px solid #B1D39F;
+  border-radius: 15px;
+  margin: 3px 10px;
+  background-image: url("img/bola1.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.portaltype-collective-cover-content header {
+  height: 250px;
+}
+header a:link,
+header a:visited {
+  color: #cccccc;
+  text-decoration: none;
+}
+header a:hover {
+  color: #000000;
+}
+/* banner */
+#logo {
+  width: 40%;
+  float: left;
+  padding: 1.5em 2em;
+  position: relative;
+  z-index: 1000;
+}
+#logo a {
+  font-family: 'Open Sans', sans-serif;
+  color: #cccccc;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1em;
+}
+#logo img {
+  float: left;
+  margin: 0.2em 1em 0.2em 0;
+  max-height: 200px;
+}
+/* search */
+#portal-searchbox {
+  width: 45%;
+  float: right;
+  text-align: right;
+  padding: 3em 3em 1em 0;
+}
+#portal-searchbox input.searchField {
+  border: 1px solid #ccc;
+  padding: 0.5em 0.2em 0.5em 0.2em;
+}
+#portal-searchbox input.searchButton {
+  padding: 0.5em;
+}
+/* Navigation */
+nav {
+  color: #ffffff;
+  clear: both;
+}
+nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: table-cell;
+  vertical-align: bottom;
+  border-right: 1px solid #ffffff;
+  width: 100%;
+  position: relative;
+  background: #79C71E;
+  background: -webkit-linear-gradient(#79c71e, #4e9f2f);
+  /* For Safari */
+
+  background: -o-linear-gradient(#79c71e, #4e9f2f);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#79c71e, #4e9f2f);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#79c71e, #4e9f2f);
+  /* Standard syntax (must be last) */
+
+}
+nav li li {
+  height: auto;
+  border-right: none;
+}
+nav li a:link {
+  font-size: 90%;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+nav li:last-child {
+  border: none;
+  padding-right: 0;
+}
+nav li a:link,
+nav li a:visited {
+  color: #ffffff;
+}
+nav li:first-child {
+  border-top-left-radius: 13px;
+}
+nav li:last-child {
+  border-top-right-radius: 13px;
+}
+/* DropDown compatibility */
+nav ul.submenu a {
+  background: transparent;
+  color: #ffffff !important;
+}
+nav ul.submenu a:hover {
+  color: #000  !important;
+  background: #fff;
+  opacity: 0.5;
+}
+nav ul {
+  list-style-image: none;
+  position: relative;
+  /* fix ie */
+
+  zoom: 1;
+  /* fix ie */
+
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+nav ul.submenu a {
+  display: block;
+  border: 1px solid #fff;
+}
+nav li:hover > ul.submenu {
+  display: block;
+}
+ul.submenu {
+  display: none;
+  left: -1px;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  border: none;
+  width: 12em;
+  box-shadow: 0px 3px 5px #ccc;
+}
+nav ul li:hover > ul.submenu {
+  display: block;
+}
+ul.submenu li {
+  float: none;
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 12em;
+}
+nav ul ul.submenu li a {
+  padding: 0.7em 1.5em 0.7em 1em;
+}
+ul.submenu ul {
+  top: 0;
+  left: 100%;
+  right: auto;
+}
+nav li:nth-child(6) ul.submenu ul,
+nav li:nth-child(7) ul.submenu ul,
+nav li:nth-child(8) ul.submenu ul {
+  left: auto;
+  right: 100%;
+}
+ul.submenu a.state-published:hover,
+.selected ul.submenu .state-published {
+  color: #000 !important;
+}
+/********** Content **********/
+/* breadcrumb */
+#portal-breadcrumbs {
+  font-size: 80%;
+  clear: both;
+  color: #346102;
+}
+#portal-breadcrumbs a,
+.breadcrumbSeparator {
+  color: #346102;
+}
+.section-front-page #portal-breadcrumbs {
+  display: none;
+}
+/* text styles */
+p {
+  line-height: 1.4em;
+  font-family: arial, helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+h1 {
+  color: #464646;
+  border: none;
+  margin-bottom: 0.6em;
+  margin-top: 0;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+h1.documentFirstHeading {
+  background: #81B66B;
+  border: 1px solid #449235;
+  padding-bottom: 3px;
+  color: #FFF;
+  border-radius: 10px;
+  padding-left: 7px;
+  font-size: 2em;
+}
+h2 {
+  color: #464646;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+#content .documentDescription,
+#content #description {
+  color: #4d4d4d;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+/********** Tiles **********/
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+/* galeria */
+.cover-carousel-tile {
+  margin-bottom: 2em;
+}
+.galleria-stage {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.galleria-info-text {
+  padding: 0;
+}
+.galleria-info-title {
+  font: bold 2em/1.1 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+.galleria-info-description {
+  font: normal 1em/1.4 arial, helvetica, sans-serif;
+  margin: 0;
+  color: #333333;
+}
+.cycle-slideshow {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  height: 266px;
+}
+img.cycle-slide {
+  width: 100%;
+}
+/*********** Portlets ***********/
+/* general styles */
+.portletHeader,
+dl.portlet dt.portletHeader {
+  border-bottom: #d9d9d9 1px solid;
+  font-weight: bold;
+  background: transparent;
+  color: #464646;
+}
+.portletHeader a,
+dl.portlet dt.portletHeader a {
+  color: #464646;
+}
+.portlet {
+  margin-bottom: 2em;
+  padding: 4px 0;
+}
+/* lists inside columns */
+aside dl,
+aside dd,
+aside ul {
+  padding: 0;
+  margin: 0;
+}
+aside a {
+  text-decoration: none;
+}
+/* portlet navigation */
+.portletNavigationTree ul {
+  margin: 0;
+}
+.portletNavigationTree li {
+  list-style-position: inside;
+}
+.portletNavigationTree .navTreeLevel0 > li {
+  border-bottom: #d9d9d9 1px solid;
+  list-style: none;
+}
+.portletNavigationTree a {
+  display: block;
+  padding: 0.3em 0.3em 0.3em 0.5em;
+}
+.portletNavigationTree a:hover {
+  background: #f2f2f2;
+}
+.navTreeLevel2 a {
+  padding-left: 1em;
+}
+.navTreeLevel3 a {
+  padding-left: 2em;
+}
+.navTreeLevel4 a {
+  padding-left: 3em;
+}
+.navTreeLevel5 a {
+  padding-left: 4em;
+}
+.navTreeLevel6 a {
+  padding-left: 5em;
+}
+/********** Config bugs *************/
+.label,
+.badge {
+  color: #333333;
+  text-shadow: 0;
+  background-color: transparent;
+}
+.label:empty,
+.badge:empty {
+  display: inline;
+}
+#main-content {
+  background: transparent;
+  padding-left: 12px;
+  padding-right: 14px;
+  padding-top: 0px;
+}
+.portaltype-collective-cover-content div#ajax-spinner + div {
+  display: none;
+}
+/********** Footer **********/
+footer {
+  background: transparent;
+  padding: 2em 2em 0 2em;
+  width: 77%;
+  margin: 0 auto;
+  padding: 11px;
+}
+footer a {
+  color: #1c2c14;
+}
+footer p {
+  margin-bottom: 2em;
+}
+#footer-info {
+  padding-top: 10px;
+}
+#portal-siteactions {
+  text-align: left;
+}
