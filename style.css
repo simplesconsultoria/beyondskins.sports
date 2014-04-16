@@ -235,11 +235,14 @@ nav ul {
   padding: 0;
 }
 nav li {
-  display: table-cell;
   vertical-align: bottom;
   border-right: 1px solid #ffffff;
-  width: 100%;
   position: relative;
+  display: inline-block;
+  float: left !important;
+  width: 19.91%;
+  border-radius: 0 !Important;
+  z-index: 9000;
   background: #79C71E;
   background: -webkit-linear-gradient(#79c71e, #4e9f2f);
   /* For Safari */
